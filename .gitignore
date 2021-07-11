@@ -2,3 +2,5 @@ node_modules/
 
 # serviceAccountKey for Google Platform access
 *serviceAccountKey.json
+
+.env
