@@ -12,8 +12,9 @@ var userArray = [];
 
 //creating a peer
 var peer = new Peer(undefined, {
+    path: "/peerjs",
     host: '/',
-    port: '3031'
+    port: '443'
 });
 
 let myVideoStream = null
