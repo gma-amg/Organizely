@@ -20,7 +20,7 @@ admin.initializeApp({
 const csrfMiddleware = csrf({ cookie: true });
 
 const peerServer = ExpressPeerServer(server, {
-    debug: true
+    debug: process.env.NODE_ENV === "development"
 });
 
 app.set('view engine', 'ejs');
@@ -105,7 +105,11 @@ app.get('/create-room/', (req, res) => {
 
 //the uuid brings us to the room and renders the room
 app.get('/:room', (req, res) => {
-    res.render('room', { roomId : req.params.room })
+    res.render('room', 
+    { 
+        roomId : req.params.room,
+        port: process.env.NODE_ENV === "production" ? 443 : 3030,
+    })
 })
 
 io.on('connection', socket => {
