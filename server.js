@@ -10,7 +10,7 @@ const { ExpressPeerServer } = require('peer');
 const { name } = require('ejs');
 var bodyParser=require('body-parser');
 var admin=require('firebase-admin');
-const serviceAccount = require(process.env.FIREBASE_SERVICE_ACCOUNT_KEY_PATH);
+const serviceAccount = require("./serviceAccountKey.json");
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
