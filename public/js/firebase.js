@@ -16,6 +16,30 @@ var userFullNameFormate = /^([A-Za-z.\s_-])/;
 var userEmailFormate = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 var userPasswordFormate = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}/; 
 
+function callGoogleSignIn(){
+  var provider = new firebase.auth.GoogleAuthProvider();
+  firebase.auth().signInWithPopup(provider)
+  .then(function(result) {
+       // This gives you a Google Access Token. You can use it to access the Google API.
+        var token = result.credential.accessToken;
+       // The signed-in user info.
+       var user = result.user;
+       var email=result.email;
+ })
+ .then(() => {
+    Swal.fire("Account created successfully!")
+    window.location.assign("/dashboard");
+ })
+ .catch(function(error) {
+     // Handle Errors here.
+       var errorCode = error.code;
+       var errorMessage = error.message;
+       // The email of the user's account used.
+       var email = error.email;
+       // The firebase.auth.AuthCredential type that was used.
+       var credential = error.credential;
+ });
+}
 // xxxxxxxxxx Working For Sign Up Form xxxxxxxxxx
 // xxxxxxxxxx Full Name Validation xxxxxxxxxx
 function checkUserFullName(){
@@ -232,3 +256,4 @@ function signOut(){
       })
   });
 }
+

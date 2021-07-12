@@ -17,6 +17,9 @@
     <link href="/assets/bootstrap/css/black-dashboard.css" rel="stylesheet" type="text/css"/>
     <!-- Sweet Alert JavaScript -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <!-- Poppins Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet">
     <title>Organizely | Log In</title>
@@ -46,6 +49,12 @@
                                 <small id="userSIPasswordError" class="form-text text-danger">Please check your password.</small>
                             </div>
                             <button type="button" class="btn btn-primary text-uppercase mb-3" onclick="signIn()">Sign In</button>
+                            <div class="google-btn float-right" onclick="callGoogleSignIn()">
+                                <div class="google-icon-wrapper">
+                                  <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+                                </div>
+                                <p class="btn-text"><b>Sign in with Google</b></p>
+                            </div>
                             <p>Not a member yet? Become a member: <a href="/sign-up"><strong class="text-primary text-uppercase showSignUpForm">Sign Up</strong></a></p>
                         </div>
                     </div>
