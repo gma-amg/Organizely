@@ -10,7 +10,7 @@ const { ExpressPeerServer } = require('peer');
 const { name } = require('ejs');
 var bodyParser=require('body-parser');
 var admin=require('firebase-admin');
-const serviceAccount = require("./serviceAccountKey.json");
+const serviceAccount = require("./serviceAccountKey.json"); //moved it to config folder, remember if pushing new changes
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
