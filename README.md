@@ -99,7 +99,7 @@ For Authentication part, you first need to create a new project in [Firebase Con
 
 The app is now ready to run locally!
 
-Open browser and go to [localhost:3031](localhost:3031)
+Open browser and go to [localhost:3030](localhost:3030)
 
   
 ## Acknowledgements
