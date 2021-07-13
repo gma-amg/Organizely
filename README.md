@@ -1,4 +1,3 @@
-
 # Organizely
 
 Organize your life with Organizely! Plan your day using our simple event planner calendar. Create 1-to-1 video chat meetings with anyone across the globe!
@@ -6,14 +5,14 @@ Organize your life with Organizely! Plan your day using our simple event planner
 ## Index
 
 An index since this readme file got a tad too long.
-| Contents | Location| 
-| ------------- |:-------------:| 
-| Technologies Used| | 
-| Demo| |
-| Features| |
-| Run Locally| |
-| Acknowledgements| |
-| Author| |
+| Contents |
+| ------------- |
+| [Technologies Used](https://github.com/gma-amg/Organizely/blob/main/README.md#technologies-used) | 
+| [Demo](https://github.com/gma-amg/Organizely/blob/main/README.md#demo) |
+| [Features](https://github.com/gma-amg/Organizely/blob/main/README.md#features) |
+| [Run Locally](https://github.com/gma-amg/Organizely/blob/main/README.md#run-locally) |
+| [Acknowledgements](https://github.com/gma-amg/Organizely/blob/main/README.md#acknowledgements) |
+| [Author](https://github.com/gma-amg/Organizely/blob/main/README.md#author) |
 
 ## Technologies Used
 
@@ -107,7 +106,7 @@ Open browser and go to [localhost:3031](localhost:3031).
 
 Couldn't have made this app without all the open source repositories, tutorials and stackoverflow answers. Some special acknowledgements to these resources:
 
- - [Video Conference App](https://github.com/Somsubhra1/Video-Conference) - [@Somsubhra](https://github.com/Somsubhra1) and [@Kinjal](https://github.com/Kinjalrk2k)
+ - [Video Conference App](https://github.com/Somsubhra1/Video-Conference) - [@Somsubhra](https://github.com/Somsubhra1) [@Kinjal](https://github.com/Kinjalrk2k)
  - [Creating your own Chatroom with SocketIO and NodeJS](https://dev.to/ibmdeveloper/creating-your-own-chat-room-with-react-node-and-socket-io-in-the-cloud-part-1-13dg)
  - [Server Side Firebase Authentication](https://www.youtube.com/watch?v=kX8by4eCyG4&ab_channel=MaksimIvanov) - [@Maksim Ivanov](https://github.com/satansdeer)
  - [Black Dashboard Bootstrap Template](https://demos.creative-tim.com/black-dashboard/docs/1.0/getting-started/introduction.html) - [@Creative Tim](https://www.creative-tim.com/)
@@ -116,5 +115,3 @@ Couldn't have made this app without all the open source repositories, tutorials 
 ## Author
 
 - [Garima Mazumdar](https://www.github.com/gma-amg)
-
-  
