@@ -72,7 +72,7 @@ Install dependencies
   npm i
 ```
 
-Instal PeerJS globally
+Install PeerJS globally
 
 ```bash
   npm i -g peerjs
@@ -99,7 +99,7 @@ For Authentication part, you first need to create a new project in [Firebase Con
 
 The app is now ready to run locally!
 
-Open browser and go to [localhost:3031](localhost:3031).
+Open browser and go to [localhost:3031](localhost:3031)
 
   
 ## Acknowledgements
