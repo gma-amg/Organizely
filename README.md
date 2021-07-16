@@ -91,7 +91,7 @@ Run PeerJS server in separate terminal
   peerjs --port 3031
 ```
 
-For Authentication part, you first need to create a new project in [Firebase Console](https://console.firebase.google.com/). Then, create a web app and copy the config variables to add to firebase.js file. Then, create a service account and generate a new private key. Add this json file in place of the empty serviceAccountKey.json file. Then, go to authentication and enable Email/Password and Google sign in. 
+For Authentication part, you first need to create a new project in [Firebase Console](https://console.firebase.google.com/). Then, create a web app and copy the config variables to add to firebase.js file. Then, create a service account and generate a new private key. Add this json file in the root directory as serviceAccountKey.json file. Then, go to authentication and enable Email/Password and Google sign in. 
 
 
 ![](https://media.giphy.com/media/5elu7pEm5nD9tJIz1x/giphy.gif)
